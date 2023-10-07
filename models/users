@@ -9,7 +9,7 @@ type Books struct {
 	Password *string `json:"password"`
 }
 
-func MigrateBooks(db *gorm.DB) error {
+func MigrateUser(db *gorm.DB) error {
 	err := db.AutoMigrate(&User{})
 	return err
 }
